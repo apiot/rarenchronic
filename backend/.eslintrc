@@ -1,0 +1,16 @@
+{
+    'parserOptions': {
+        'ecmaVersion': 2017,
+        'sourceType': 'module',
+    },
+    'env': { node: true },
+    'plugins': ['node'],
+    'extends': ['airbnb-base'],
+    'rules': {
+        'node/exports-style': ['error', 'module.exports'],
+        'indent': ['error', 4],
+        'no-console': 1,
+        'camelcase': 0,
+        'dot-notation': 0,
+    },
+}

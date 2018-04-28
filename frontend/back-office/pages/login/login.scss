@@ -1,0 +1,76 @@
+.login {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+
+    &__login {
+        & label {
+            display: block;
+
+            & span {
+                text-align: left;
+                display: inline-block;
+                width: 14em;
+            }
+        }
+
+        &__submit {
+            @media screen and (min-width: 34em) {
+                padding-left: 14em;
+            }
+        }
+
+        &__forgot-password {
+            & form {
+                & label {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+
+    &__creation {
+        & label {
+            display: block;
+
+            & span {
+                text-align: left;
+                display: inline-block;
+                width: 14em;
+            }
+
+            & .login-form-conditions {
+                text-align: left;
+                width: 90%;
+            }
+        }
+
+        &__on-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        &__message {
+            margin: 1em 0;
+        }
+
+        &__submit {
+            @media screen and (min-width: 34em) {
+                padding-left: 14em;
+            }
+        }
+
+        &__no-activation-mail {
+            & form {
+                & label {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}

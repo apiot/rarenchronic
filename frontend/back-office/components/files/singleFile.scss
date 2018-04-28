@@ -1,0 +1,136 @@
+.single-file {
+    display: inline-block;
+    position: relative;
+    margin: 0.5em;
+    width: 16em;
+    height: 12em;
+    background-color: #EEE;
+    overflow: hidden;
+
+    &__image {
+        display: block;
+        margin: 0 auto;
+        max-width: 16em;
+        max-height: 12em;
+    }
+
+    &__overlay {
+        position: absolute;
+        width: 16em;
+        height: 15em;
+        top: 10em;
+        background-color: #000;
+        opacity: 0.6;
+        color: #FFF;
+
+        -webkit-transition:top 0.15s ease-in-out;
+        -moz-transition:top 0.15s ease-in-out;
+        -o-transition:top 0.15s ease-in-out;
+        -ms-transition:top 0.15s ease-in-out;
+        transition:top 0.15s ease-in-out;
+
+        &__name {
+            font-size: 1.2em;
+            padding-bottom: 1em;
+            text-align: center;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &__name-edit {
+            font-size: 0.9em;
+
+            & input {
+                width: 14em;
+            }
+        }
+
+        &__category-text {
+            font-size: 0.9em;
+            width: 15em;
+            margin: 0 0 0.5em 0.5em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &__category {
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            width: 15em;
+            margin: 0 0 0.5em 0.5em;
+            background-color: #FFF;
+            border-radius: 0.3em;
+
+            &__select {
+                display: inline-block;
+                width: 15em;
+
+                & input {
+                    max-width: 11em;
+                }
+
+                & .Select-menu-outer * {
+                    max-height: 100px;
+                }
+            }
+        }
+
+        &__public label {
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            margin: 0 0 0.5em 0.5em;
+        }
+
+        &__delete {
+            font-size: 0.9em;
+            margin: 0 0.5em;
+            display: flex;
+            align-items: center;
+            margin: 0 0 0.5em 0.5em;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &__icon {
+                display: inline-block;
+                border-radius: 0.5em;
+                font-size: 1.5em;
+                margin-left: 0.5rem;
+
+                & svg {
+                    padding: 0.2em 0.3em;
+                }
+            }
+
+            &__icon-pre-delete {
+                color: #FFF;
+                background-color: #b30000;
+            }
+
+            &__icon-check-delete {
+                color: #888;
+                background-color: #EEE;
+            }
+        }
+
+        &__info {
+            margin: 0 0.5em;
+            font-size: 0.8em;
+        }
+    }
+}
+
+.single-file:hover .single-file__overlay {
+    top: 0;
+    opacity: 0.8;
+}

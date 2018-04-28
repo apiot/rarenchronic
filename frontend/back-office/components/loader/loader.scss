@@ -1,0 +1,31 @@
+.loader-box {
+    padding: 0;
+    margin: 2em auto;
+    height: 7em;
+    width: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__label {
+        position: relative;
+    }
+
+    &__spinner {
+        position: absolute;
+        height: 8em;
+        width: 8em;
+        border-radius: 4em;
+        border-bottom: 3px #000 solid;
+        border-left-width: 0;
+        border-top-width: 0;
+        border-right-width: 0;
+        -webkit-animation: spin 3s linear infinite;
+        -moz-animation: spin 3s linear infinite;
+        animation: spin 3s linear infinite;
+    }
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

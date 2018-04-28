@@ -1,0 +1,30 @@
+.article-line {
+    margin: 0;
+    padding: 1.5em 0 1em 0;
+    border-bottom: 1px solid #CCC;
+    &:hover {
+        background-color: #F9F9F9;
+    }
+
+    &__one-line {
+        padding: 0.3em 0 0.2em 0;
+    }
+
+    &__strict-line {
+        white-space: nowrap;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__title {
+        font-weight: bold;
+    }
+
+    &__meta {
+        padding: 0;
+    }
+
+    &__commands {
+        text-align: right;
+    }
+}

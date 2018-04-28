@@ -1,0 +1,22 @@
+.default-block {
+    margin-top: 1em;
+    padding: 0;
+
+    &__title {
+        font-size: 1.4em;
+        border-top: 1px #AAA solid;
+        border-bottom: 1px #AAA solid;
+        margin: 0;
+        padding: 0.3em 0;
+        color: #666;
+    }
+
+    &__content {
+        @media screen and (max-width: 1000px) {
+            padding: 1em 0;
+        }
+        @media screen and (min-width: 1000px) {
+            padding: 1em 0.5em;
+        }
+    }
+}

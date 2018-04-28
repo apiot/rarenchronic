@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'ubuntu';
+    src: url('./assets/fonts/Ubuntu-M.ttf');
+}
+@font-face {
+    font-family: 'ubuntuBold';
+    src: url('./assets/fonts/Ubuntu-B.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f2f2;
+}
+
+h1 {
+    font-size: 1.4em;
+    border-top: 1px #AAA solid;
+    border-bottom: 1px #AAA solid;
+    margin: 1em 0;
+    padding: 0.3em 0;
+    color: #888;
+}
+
+a {
+    color: #0d750d;
+    text-decoration: none;
+}
+
+input {
+    font-family: ubuntu;
+    font-size: 1em;
+    display: inline-block;
+    border: 1px #CCC solid;
+    border-radius: 0.5em;
+    background-color: #FFF;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+input[type='submit'] {
+    font-family: ubuntu;
+    font-size: 1em;
+    border: 1px #CCC solid;
+    border-radius: 0.5em;
+    background-color: #CCC;
+    padding: 0.5em;
+    margin: 0.5em;
+    color: #FFF;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+input[type='reset'] {
+    font-family: ubuntu;
+    font-size: 1em;
+    border: 1px #666 solid;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0.5em;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+button {
+    font-family: ubuntu;
+    font-size: 1em;
+    border: 1px #CCC solid;
+    border-radius: 0.5em;
+    background-color: #CCC;
+    padding: 0.5em;
+    margin: 0.5em;
+    color: #FFF;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.icon-button {
+    font-size: 1.5em;
+    border: 1px #CCC solid;
+    border-radius: 0.5em;
+    background-color: #CCC;
+    padding: 0.2em;
+    margin: 0.3em;
+    color: #FFF;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #F0F0F0;
+        color: #000;
+    }
+}
+
+textarea {
+    font-family: ubuntu;
+    font-size: 1em;
+    border: 1px #CCC solid;
+    border-radius: 0.5em;
+    background-color: #FFF;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.blueText { color: #0033cc; }
+.greenText { color: #0d750d; }
+.redText { color: #b30000; }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

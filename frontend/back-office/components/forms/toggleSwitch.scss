@@ -1,0 +1,58 @@
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 2.6em;
+    height: 1.4em;
+    margin: 0.5em;
+
+    &__input {
+        display: none;
+    }
+
+    &__slider {
+        width: 2.6em;
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .2s;
+        transition: .2s;
+    }
+
+    &__slider:before {
+        position: absolute;
+        content: '';
+        height: 1em;
+        width: 1em;
+        left: 0.2em;
+        bottom: 0.2em;
+        background-color: white;
+        -webkit-transition: .2s;
+        transition: .2s;
+    }
+
+    &__input:checked + &__slider {
+        background-color: #0d750d;
+    }
+
+    &__input:focus + &__slider {
+        box-shadow: 0 0 1px #0d750d;
+    }
+
+    &__input:checked + &__slider:before {
+        -webkit-transform: translateX(1.2em);
+        -ms-transform: translateX(1.2em);
+        transform: translateX(1.2em);
+    }
+
+    &__round {
+        border-radius: 0.7em;
+    }
+
+    &__round:before {
+        border-radius: 50%;
+    }
+}

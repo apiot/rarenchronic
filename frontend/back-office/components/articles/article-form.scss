@@ -1,0 +1,100 @@
+.article-form {
+    display: grid;
+
+    @media screen and (max-width: 1050px) {
+    }
+    @media screen and (min-width: 1050px) {
+        grid-template-columns: 15em 3em auto;
+        grid-template-rows: 100%;
+    }
+
+    &__meta {
+        @media screen and (max-width: 1000px) {
+        }
+        @media screen and (min-width: 1000px) {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+            display: flex;
+            flex-direction: column;
+
+            &__select-box {
+                border-radius: 0.5em;
+                padding: 0 0.5em;
+                margin: 0.5em 0.5em 0.5em 0;
+            }
+        }
+        border: 1px solid #000;
+    }
+
+    &__commands {
+        @media screen and (max-width: 1000px) {
+        }
+        @media screen and (min-width: 1000px) {
+        }
+
+        & > span:hover {
+            cursor: pointer;
+        }
+
+        & > span:active > svg {
+            background-color: #888;
+        }
+
+        & > span > svg {
+            font-size: 1.2em;
+            margin-bottom: 0.2em;
+            background-color: #DDD;
+            border-radius: 0.25em;
+            padding: 0.25em;
+            min-width: 1.2em;
+        }
+    }
+
+    &__main-form {
+        @media screen and (max-width: 1000px) {
+        }
+        @media screen and (min-width: 1000px) {
+            height: calc(100vh - 10em);
+            grid-column: 3 / span 1;
+            grid-row: 1 / span 1;
+            flex-direction: row;
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            &__title-box {
+                display: block;
+                width: 700px;
+                font-size: 2em;
+                margin: 0 auto 1em auto;
+                border-width: 0;
+                padding: 0;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            &__text-box {
+                width: 700px;
+                font-size: 1.2em;
+                line-height: 2em;
+                min-height: calc(100vh - 3em);
+                margin: 0 auto;
+
+                &:empty:not(:focus):before {
+                    content: attr(datatext)
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            &__placeholder {
+                color: #CCC;
+                font-style: italic;
+            }
+        }
+        border: 1px solid #DDD;
+    }
+}

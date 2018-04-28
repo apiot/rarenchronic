@@ -1,0 +1,49 @@
+.layout {
+    font-family: ubuntu;
+    background-color: #f5f2f2;
+
+    &__header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #f5f2f2;
+        box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+        margin-bottom: 3px;
+        z-index: 10;
+
+        @media screen and (max-width: 1000px) {
+            height: 3em;
+        }
+        @media screen and (min-width: 1000px) {
+            height: 4em;
+        }
+    }
+
+    &__content {
+        position: relative;
+        padding: 1em;
+        background-color: #FFF;
+        z-index: 0;
+
+        @media screen and (max-width: 1000px) {
+            margin-top: 3em;
+        }
+        @media screen and (min-width: 1000px) {
+            margin-top: 4em;
+        }
+    }
+
+    &__footer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5f2f2;
+        color: #000;
+        box-shadow: 0 -3px 4px rgba(0, 0, 0, 0.25);
+        height: 3em;
+        margin: 0;
+        padding: 1em;
+    }
+}

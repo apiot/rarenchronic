@@ -1,0 +1,42 @@
+.profile {
+    &__simple-form {
+        & label {
+            display: block;
+
+            & span {
+                display: inline-block;
+                width: 12em;
+            }
+        }
+
+        & input[type='submit'] {
+            margin-left: 12.5em;
+        }
+    }
+
+    &__description {
+        &__description {
+            display: block;
+            width: calc(100% - 1em);
+            min-height: 6em;
+        }
+    }
+
+    &__display {
+
+        & label {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        &__label-text {
+            display: inline-block;
+            width: 12em;
+        }
+
+        & input[type='submit'] {
+            margin-left: 12.5em;
+        }
+    }
+}
